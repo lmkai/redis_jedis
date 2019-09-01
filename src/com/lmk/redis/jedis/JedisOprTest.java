@@ -9,6 +9,7 @@ public class JedisOprTest {
     Jedis jedis = JedisUtil.INSTANCE.getResource();
     @Test
     public void testKey()throws Exception{
+
         //清空数据
         jedis.flushAll();
         //判断是否存在
